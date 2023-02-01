@@ -3,8 +3,8 @@ import 'package:google_fonts/google_fonts.dart';
 
 class AppStyle{
   static Color bgColor = Color(0xFFE2E2FF);
-  static Color mainColor = Color(0xFF000633);
-  static Color accentColor = Color(0xFF0065FF);
+  static Color mainColor = Color(0xFF00000F);
+  static Color accentColor = Color(0xFF0000AA);
 
   static List<Color> cardsColor = [
     Colors.white,
@@ -15,6 +15,10 @@ class AppStyle{
     Colors.green.shade100,
     Colors.blue.shade100,
     Colors.blueGrey.shade100,
+    Colors.amber.shade100,
+    Colors.teal.shade100,
+    Colors.purpleAccent.shade100,
+    Colors.blueAccent.shade100,
   ];
 
   static TextStyle mainTitle = GoogleFonts.roboto(
