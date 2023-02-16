@@ -3,10 +3,9 @@ import 'package:flutter/material.dart';
 
 class MainAppBar extends StatelessWidget with PreferredSizeWidget {
   const MainAppBar(
-      {super.key, required this.onSearchPress, required this.onInfoPress});
+      {super.key, required this.onSearchPress});
 
   final Function onSearchPress;
-  final Function onInfoPress;
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +18,7 @@ class MainAppBar extends StatelessWidget with PreferredSizeWidget {
             const Text(
               'Notes',
               style: TextStyle(
-                  fontWeight: FontWeight.w400,
+                  fontWeight: FontWeight.w600,
                   fontSize: 43,
                   color: Colors.white),
             ),
@@ -39,25 +38,6 @@ class MainAppBar extends StatelessWidget with PreferredSizeWidget {
                     ),
                     child: const Icon(
                       Icons.search_rounded,
-                      color: Colors.white,
-                    ),
-                  ),
-                ),
-                const SizedBox(width: 22),
-                InkWell(
-                  onTap: () => onInfoPress(),
-                  borderRadius: BorderRadius.circular(16),
-                  child: Ink(
-                    width: 50,
-                    height: 50,
-                    decoration: const BoxDecoration(
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(16),
-                      ),
-                      color: CustomColors.lightGrey,
-                    ),
-                    child: const Icon(
-                      Icons.info_outline_rounded,
                       color: Colors.white,
                     ),
                   ),

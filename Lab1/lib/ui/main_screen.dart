@@ -16,7 +16,6 @@ class MainScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: MainAppBar(
-        onInfoPress: () => openDialog(context),
         onSearchPress: () => Navigator.pushNamed(context, '/search'),
       ),
       body: StreamBuilder<NotesState>(
@@ -41,46 +40,6 @@ class MainScreen extends StatelessWidget {
           elevation: 24,
           backgroundColor: CustomColors.trueBlack,
           child: const Icon(Icons.add_rounded),
-        ),
-      ),
-    );
-  }
-
-
-  // delete
-  Future openDialog(BuildContext context) {
-    return showDialog(
-      context: context,
-      builder: (context) => AlertDialog(
-        content: SizedBox(
-          width: 330,
-          height: 236,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: const [
-              Text(
-                'to delete note use swipe',
-                style: TextStyle(color: Colors.white),
-              ),
-              Text(
-                'to search note use search icon',
-                style: TextStyle(color: Colors.white),
-              ),
-              Text(
-                'to add note use + icon',
-                style: TextStyle(color: Colors.white),
-              ),
-              Text(
-                'to edit note use tapping on note',
-                style: TextStyle(color: Colors.white),
-              ),
-              Text(
-                'u can change color on main screen of notes throught out the edit screen',
-                style: TextStyle(color: Colors.white),
-              ),
-            ],
-          ),
         ),
       ),
     );

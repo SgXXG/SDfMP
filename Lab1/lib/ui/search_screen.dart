@@ -39,12 +39,11 @@ class NotesNotFoundScreen extends StatelessWidget {
               return Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16),
                 child: Column(
-                  children: [
-                    const SizedBox(
+                  children: const [
+                    SizedBox(
                       height: 20,
                     ),
-                    //Image.asset('assets/images/no_notes.png'),
-                    const Text(
+                    Text(
                       'File not found. Try searching again',
                       style: TextStyle(fontSize: 22, color: Colors.white),
                     ),
@@ -54,20 +53,5 @@ class NotesNotFoundScreen extends StatelessWidget {
             }
           }),
     );
-    /*return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 16),
-      child: Column(
-        children: [
-          const SizedBox(
-            height: 20,
-          ),
-          Image.asset('assets/images/no_notes.png'),
-          const Text(
-            'File not found. Try searching again',
-            style: TextStyle(fontSize: 22, color: Colors.white),
-          ),
-        ],
-      ),
-    );*/
   }
 }
