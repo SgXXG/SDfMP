@@ -27,6 +27,8 @@ LazyDatabase _openConnection() {
     () async {
       final dbFolder = await getApplicationDocumentsDirectory();
       final file = File(p.join(dbFolder.path, 'notes_database.sqlite'));
+      print(file);
+      print(dbFolder.path);
       return NativeDatabase(file);
     },
   );

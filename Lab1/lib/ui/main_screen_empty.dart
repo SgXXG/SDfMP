@@ -10,12 +10,12 @@ class MainScreenEmpty extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16),
       child: Column(
-        children: [
-          const SizedBox(
+        children: const [
+          SizedBox(
             height: 20,
           ),
           //Image.asset('assets/images/no_data.png'),
-          const Text(
+          Text(
             'Create your first note!',
             style: TextStyle(fontSize: 22, color: Colors.white),
           ),

@@ -43,6 +43,7 @@ class NotesNotFoundScreen extends StatelessWidget {
                     SizedBox(
                       height: 20,
                     ),
+                    //Image.asset('assets/images/no_notes.png'),
                     Text(
                       'File not found. Try searching again',
                       style: TextStyle(fontSize: 22, color: Colors.white),
