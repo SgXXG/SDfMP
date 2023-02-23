@@ -1,16 +1,11 @@
-# qr_code
+# QR-code
 
-A new Flutter project.
+A simple app. Allows to generate QR-code from inputed text. Also allows to decode any QR-code into text & copy this text to clipboard.
 
-## Getting Started
+## Features
+- Supports Android/iOS
+- Generate QR-code
+- Decode QR-code
+- Copy decoded to  clipboard
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+ 

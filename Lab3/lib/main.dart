@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text('QR Code Generator'),
+          title: const Text('QR Code Generator'),
         ),
         body: QRCodeGenerator(),
       ),
@@ -41,7 +41,7 @@ class _QRCodeGeneratorState extends State<QRCodeGenerator> {
       child: Column(
         children: <Widget>[
           TextField(
-            decoration: InputDecoration(
+            decoration: const InputDecoration(
               hintText: 'Введите текст для генерации QR-кода',
             ),
             onChanged: (text) {
@@ -50,13 +50,13 @@ class _QRCodeGeneratorState extends State<QRCodeGenerator> {
               });
             },
           ),
-          SizedBox(height: 10.0),
+          const SizedBox(height: 10.0),
           _qrCode == null
-              ? Text('QR-код будет сгенерирован здесь')
+              ? const Text('QR-код будет сгенерирован здесь')
               : Image.memory(_qrCode!),
-          SizedBox(height: 10.0),
+          const SizedBox(height: 10.0),
           ElevatedButton(
-            child: Text('Сгенерировать QR-код'),
+            child: const Text('Сгенерировать QR-код'),
             onPressed: () async {
               try {
                 ByteData? qrCode = await QrPainter(
@@ -74,9 +74,9 @@ class _QRCodeGeneratorState extends State<QRCodeGenerator> {
               }
             },
           ),
-          SizedBox(height: 10.0),
+          const SizedBox(height: 10.0),
           ElevatedButton(
-            child: Text('Считать QR-код'),
+            child: const Text('Считать QR-код'),
             onPressed: () async {
               String result = await FlutterBarcodeScanner.scanBarcode(
                 '#FF0000',
@@ -103,9 +103,9 @@ class _QRCodeGeneratorState extends State<QRCodeGenerator> {
               }
             },
           ),
-          SizedBox(height: 10.0),
+          const SizedBox(height: 10.0),
           _scannedText == ''
-              ? Text('Текст из QR-кода будет сгенерирован здесь')
+              ? const Text('Текст из QR-кода будет сгенерирован здесь')
               : Text('Текст из QR-кода: $_scannedText'),
         ],
       ),
